@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso  xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+
+	<amendment name="thisAmmendment">
+
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="/ak/amendment/2010-10-28/2/main"/>
+					<FRBRuri value="/ak/amendment/2010-10-28/2"/>
+					<FRBRdate date="2010-10-28" name="Enactment"/>
+					<FRBRauthor href="#EP" as="#author"/>
+					<FRBRcountry value="ak"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="/ak/amendment/2010-10-28/2/eng@/main"/>
+					<FRBRuri value="/ak/amendment/2010-10-28/2/eng@"/>
+					<FRBRdate date="2011-11-24" name="Expression"/>
+					<FRBRauthor href="#EP" as="#editor"/>
+					<FRBRlanguage language="eng"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="/ak/amendment/2010-10-28/2/eng@/main.xml"/>
+					<FRBRuri value="/ak/amendment/2010-10-28/2/eng@/main.akn"/>
+					<FRBRdate date="2011-11-24" name="XMLConversion"/>
+					<FRBRauthor href="#somebody" as="#editor"/>
+				</FRBRManifestation>
+			</identification>
+			<analysis source="#EP">
+				<activeModifications>
+					<textualMod type="substitution" eId="amd2-amod1">
+						<source href="#amd2-mod1"/>
+						<destination eId="amd2-am1-dst1"
+							href="urn:lex:eu:commission:proposal:2009:433#par1"/>
+						<old href="#amd2-mod1-qst1"/>
+						<new href="#amd2-mod1-qst2"/>
+					</textualMod>
+				</activeModifications>
+			</analysis>
+			<references source="#EP">
+				<original eId="org1" href="/ak/amendment/2010-10-28/2/eng@"
+					showAs="Original"/>
+				<activeRef eId="COM20090433"
+					href="urn:lex:eu:commission:proposal:2009:0433"
+					showAs="reference"/>
+				<TLCConcept eId="newVersion"
+					href="/ep/ontology/amendment/newVersion" showAs="newVersion"/>
+				<TLCConcept eId="initialVersion"
+					href="/ep/ontology/amendment/initialVersion"
+					showAs="initialVersion"/>
+				<TLCConcept eId="newVersionTitle"
+					href="/ep/ontology/amendment/newVersionTitle"
+					showAs="new version"/>
+				<TLCConcept eId="initialVersionTitle"
+					href="/ep/ontology/amendment/initialVersionTitle"
+					showAs="initial version"/>
+				<TLCOrganization eId="EP" href="/eu/ep/ontology/institution/EP"
+					showAs="EP"/>
+				<TLCPerson eId="somebody" href="/eu/ep/ontology/person/somebody"
+					showAs="somebody"/>
+				<TLCPerson eId="pers28349"
+					href="/eu/ep/ontology/person/philippe.lamberts"
+					showAs="Philippe Lamberts"/>
+				<TLCRole eId="author" href="/eu/ep/ontology/role/author"
+					showAs="author"/>
+				<TLCRole eId="editor" href="/eu/ep/ontology/role/editor"
+					showAs="editor"/>
+			</references>
+		</meta>
+		<preface xml:lang="en">
+			<p>
+				<docProponent refersTo="#pers28349" eId="pre-pro2">Philippe
+					Lamberts</docProponent>
+				<affectedDocument refersTo="#COM20090433"
+					href="urn:lex:eu:commission:proposal:2009:0433"
+					>COM(2009)0433</affectedDocument>
+			</p>
+		</preface>
+		<amendmentBody xml:lang="en">
+			<amendmentHeading>
+				<p>
+					<span eId="amd2-div1" refersTo="#initialVersionTitle">Draft
+						opinion</span>
+					<ref eId="amd2-ref1"
+						href="urn:lex:eu:commission:proposal:2009:0433#par1"
+						>Paragraph 1 </ref>
+				</p>
+			</amendmentHeading>
+			<amendmentContent xml:lang="en">
+				<p>
+					<span eId="amd2-div2" refersTo="#initialVersionTitle">Draft
+						Opition</span>
+				</p>
+				<p>
+					<ref eId="amd2-ref2"
+						href="urn:lex:eu:commission:proposal:2009:0433#par1"
+						refersTo="#newVersionTitle">Amendment</ref>
+				</p>
+				<p>
+					<mod eId="amd2-mod1">
+						<quotedStructure eId="amd2-mod1-qst1"
+							refersTo="#initialVersion">
+							<paragraph eId="amd2-mod1-qst1-par1">
+								<num>1.</num>
+								<content>
+									<p>
+										<change eId="chg1">
+										<del>The European Parliament's Committee
+										on Economic and Monetary Affairs
+										notes</del>
+										</change> the Commission's initiative to
+										launch a fruitful and serious dialogue
+										on improving gross domestic product
+										(GDP) as an indicator for assessing
+										economic activity and progress.</p>
+								</content>
+							</paragraph>
+						</quotedStructure>
+						<quotedStructure eId="amd2-mod1-qst2"
+							refersTo="#newVersion">
+							<paragraph eId="amd2-mod1-qst2-par1">
+								<num>1.</num>
+								<content>
+									<p>
+										<change eId="chg2">
+										<ins>Welcomes </ins>
+										</change>the Commission's initiative to
+										launch a fruitful and serious dialogue
+										on improving gross domestic product
+										(GDP) as an indicator for assessing
+										economic activity and progress; </p>
+								</content>
+							</paragraph>
+						</quotedStructure>
+					</mod>
+				</p>
+			</amendmentContent>
+		</amendmentBody>
+	</amendment>
+</akomaNtoso>

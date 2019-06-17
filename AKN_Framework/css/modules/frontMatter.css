@@ -1,0 +1,180 @@
+/* ******************************************************
+ *        Akoma Ntoso - Frontmatter Elements
+ * ***************************************************** */
+ 
+@media oxygen {
+     coverPage, preamble {
+        -oxy-foldable: true;
+        -oxy-folded: true;
+        -oxy-not-foldable-child: heading, num;
+    }
+    
+    preface {
+        -oxy-foldable: true;
+        -oxy-not-foldable-child: heading, num;  
+    }   
+}
+
+/* For print render, assign these onto pages. */
+coverPage, preface {
+    page: default-page;
+    page-break-after: always;
+}
+
+component preface {
+    page-break-after: avoid;
+}
+
+/* *****************   Cover Page  ***************** */
+@media oxygen {
+   coverPage {
+        margin: 0.75em;
+        padding: 0.75em;
+        border: 0.75pt solid black;
+    } 
+    
+    preface:before {
+        content: "Preface: ";
+        font-weight: bold;
+    }
+    
+    preamble:before {
+        content: "Preamble: ";
+        font-weight: bold;
+    }
+    
+    coverPage:before {
+        content: "Cover Page: ";
+        font-weight: bold;
+    }
+}
+
+/* Common entities on the cover page are larger than normal. */
+coverPage > * {
+    text-align: center;
+}
+
+coverPage > p, coverPage container, 
+coverPage block {
+    display: block;
+}
+
+@media oxygen-chemistry {
+    
+    coverPage {
+        margin-top: 1.5in;
+    }
+    
+    coverPage > * {
+        font-size: 36pt;
+    }
+  
+}
+
+@media oxygen {
+    coverPage entity, 
+    coverPage p {
+        font-size: 14pt;
+    }
+    
+    coverPage organization, 
+    coverPage legislature {
+        font-size: 18pt;
+    }
+}
+
+@media oxygen {
+     preface, preamble {
+        display: block;
+        margin: 0.75em;
+        padding: 0.75em;
+        border: grey 0.50pt solid;
+    }   
+}
+
+preface > * {
+    text-align: center;
+}
+
+preamble > p, preface > p {
+    font-size: 16pt;
+    display: block;
+}
+
+docTitle, docProponent, docType {
+    display: block;
+    font-size: 22pt;
+}
+
+affectedDocument {
+    display: block;
+    font-size: 18pt;
+}
+
+docNumber, docDate {
+    display: block;
+    font-size: 18pt;
+}
+
+preface p docNumber, preface p docDate {
+    display: inline;
+    font-size: 14pt;
+}
+
+p > docTitle, p > docTitle, p > docProponent, p > docType {
+    display: inline;
+    font-size: 18pt;
+}
+
+longTitle {
+    display: block;
+    font-size: 20pt;
+    margin: 1.25em;
+}
+
+shortTitle {
+    font-weight: bold;
+}
+
+/* TOC Elements */
+
+@media oxygen { 
+    toc, div.toc {
+        margin: 0.75em;
+        padding: 0.75em;
+        border: grey 0.5pt solid;
+        text-align: left;
+    }
+    
+    toc:before {
+        content: "Table of Contents: ";
+        font-weight: bold;
+    }
+}
+
+/* *****************  TOC Rules     ********************* */
+preface toc {
+    page-break-after: always;
+}
+
+toc {
+    margin: 0.5em;
+}
+
+tocItem {
+    display: block;
+    margin: 0.5em;
+    color: blue;
+}
+
+tocItem[level = '1'] {
+    margin-left: 0.5em;
+}
+
+tocItem[level = '2'] {
+    margin-left: 1.25em;
+}
+
+tocItem[level = '3'] {
+    margin-left: 2.0em;
+}

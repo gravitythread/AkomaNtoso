@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+	<act contains="originalVersion" name="theAct">
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="/us/act/2011-11-29/112-61/main"/>
+					<FRBRuri value="/us/act/2011-11-29/112-61"/>
+					<FRBRdate date="2011-11-29" name="Generation"/>
+					<FRBRauthor href="#parliament" as="#author"/>
+					<FRBRcountry value="us"/>
+					<FRBRnumber value="112-61"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="/us/act/2011-11-29/112-61/eng@/main"/>
+					<FRBRuri value="/us/act/2011-11-29/112-61/eng@"/>
+					<FRBRdate date="2012-05-09" name="Generation"/>
+					<FRBRauthor href="#somebody" as="#editor"/>
+					<FRBRlanguage language="eng"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="/us/act/2011-11-29/112-61/eng@/main.xml"/>
+					<FRBRuri value="/us/act/2011-11-29/112-61/eng@.akn"/>
+					<FRBRdate date="2012-05-09" name="Generation"/>
+					<FRBRauthor href="#somebody" as="#editor"/>
+					<FRBRformat value="xml"/>
+				</FRBRManifestation>
+			</identification>
+			<publication name="gpo" date="2011-11-29" showAs="GPO"
+				number="125 STAT."/>
+			<classification source="#somebody">
+				<keyword value="maritimeLaw" showAs="Maritime Law"
+					dictionary="US"/>
+			</classification>
+			<lifecycle source="#somebody">
+				<eventRef eId="e1" date="2011-11-29" source="#ro1"
+					type="generation"/>
+			</lifecycle>
+			<references source="#somebody">
+				<original eId="ro1" href="/us/act/2003-12-10/8/eng@/main"
+					showAs="Original"/>
+				<TLCPerson eId="somebody" href="/ontology/person/akn/somebody"
+					showAs="somebody"/>
+				<TLCOrganization eId="parliament"
+					href="/ontology/organization/akn/parliament"
+					showAs="House of Congress"/>
+				<TLCRole eId="editor" href="/ontology/role/akn/editor"
+					showAs="Editor"/>
+				<TLCRole eId="author" href="/ontology/role/akn/author"
+					showAs="Author"/>
+				<TLCConcept eId="enactingFormula"
+					href="/ontology/concept/akn/enactingFormula"
+					showAs="Enacting Formula"/>
+				<TLCConcept eId="americanCup"
+					href="/ontology/concept/akn/americanCup"
+					showAs="34 American'sCup"/>
+				<TLCConcept eId="americanCupRaceManagement"
+					href="/ontology/concept/akn/americanCupRaceManagement"
+					showAs="American Cup Race Management"/>
+				<TLCConcept eId="eligibilityCertification"
+					href="/ontology/concept/akn/eligibilityCertification"
+					showAs="Eligibility Certification"/>
+				<TLCConcept eId="eligibleVessel"
+					href="/ontology/concept/akn/eligibleVessel"
+					showAs="Eligible Vessel"/>
+			</references>
+		</meta>
+		<preface>
+			<p>
+				<legislature>112th Congress</legislature>
+				<docType>Public Law</docType> 61</p>
+			<p>
+				<docDate date="2011-11-29">NOV. 29, 2011</docDate>
+			</p>
+			<p class="page">125 STAT. 753 Public Law
+					<docNumber>112-61</docNumber>
+			</p>
+			<p>
+				<legislature>112th Congress</legislature>
+			</p>
+			<p> An <docType>Act</docType>
+				<docTitle>To facilitate the hosting in the United States of the
+					34th America's Cup by authorizing certain eligible vessels
+					to participate in activities related to the competition, and
+					for other purposes.</docTitle>
+				<authorialNote eId="note1" placement="side">
+					<p>NOTE: Nov. 29, 2011 - <ref eId="ref1"
+							href="/us/bill/2011-11-29/hr3321/">[H.R. 3321]
+						</ref>
+					</p>
+				</authorialNote>
+			</p>
+		</preface>
+		<preamble>
+			<formula refersTo="#enactingFormula" name="theFormula">
+				<p>Be it enacted by the Senate and House of Representatives of
+					the United States of America in Congress assembled, </p>
+			</formula>
+		</preamble>
+		<body>
+			<section eId="sec1">
+				<num>SECTION 1. </num>
+				<heading>SHORT TITLE.<authorialNote eId="note2" placement="side">
+						<p> America's Cup Act of 2011.</p>
+					</authorialNote>
+				</heading>
+				<content>
+					<p>This Act may be cited as the ``<shortTitle>America's Cup
+							Act of 2011</shortTitle> ''.</p>
+				</content>
+			</section>
+			<section eId="sec2">
+				<num> SEC. 2. </num>
+				<heading>DEFINITIONS. </heading>
+				<list eId="sec2-lst1">
+					<intro>
+						<p> In this Act:</p>
+					</intro>
+					<point eId="sec2-lst1-pnt1">
+						<num>(1) </num>
+						<intro>
+							<p>
+								<def refersTo="#americanCup" class="definition"
+									>34th america's cup.</def>--The term ``34th
+								America's Cup''--</p>
+						</intro>
+						<list eId="sec2-lst1-pnt1-lst1">
+							<point eId="sec2-list1-pnt1-pnta">
+								<num>(A) </num>
+								<content>
+									<p>means the sailing competitions,
+										commencing in 2011, to be held in the
+										United States in response to the
+										challenge to the defending team from the
+										United States, in accordance with the
+										terms of the America's Cup governing
+										Deed of Gift, dated October 24, 1887;
+										and </p>
+								</content>
+							</point>
+							<point eId="sec2-list1-pnt1-pntb">
+								<num>(B)</num>
+								<content>
+									<p> if a United States yacht club
+										successfully defends the America's Cup,
+										includes additional sailing competitions
+										conducted by America's Cup Race
+										Management during the 1-year period
+										beginning on the last date of such
+										defense. </p>
+								</content>
+							</point>
+						</list>
+					</point>
+					<point eId="sec2-list1-pnt2">
+						<num>(2) </num>
+						<content>
+							<p>
+								<def refersTo="#americanCupRaceManagement"
+									class="definition">America's cup race
+									management.</def>--The term ``America's Cup
+								Race Management'' means the entity established
+								to provide for independent, professional, and
+								neutral race management of the America's Cup
+								sailing competitions. </p>
+						</content>
+					</point>
+					<point eId="sec2-list1-pnt3">
+						<num>(3) </num>
+						<content>
+							<p>
+								<def refersTo="#eligibilityCertification"
+									class="definition">Eligibility
+									certification.</def>--The term ``Eligibility
+								Certification'' means a certification issued
+								under section 4.</p>
+						</content>
+					</point>
+					<point eId="sec2-list1-pnt4">
+						<num>(4) </num>
+						<list eId="sec2-list1-pnt4-list1">
+							<intro>
+								<p>
+									<def refersTo="#eligibleVessel"
+										class="definition">Eligible
+										vessel.</def>--The term ``eligible
+									vessel'' means a competing vessel or
+									supporting vessel of any registry that--
+								</p>
+							</intro>
+							<point eId="sec2-list1-pnt4-list1-pnta">
+								<num>(A) </num>
+								<content>
+									<p>is recognized by America's Cup Race
+										Management as an official competing
+										vessel, or supporting vessel of, the
+										34th America's Cup, as evidenced in
+										writing to the Administrator of the
+										Maritime Administration of the
+										Department of Transportation; </p>
+								</content>
+							</point>
+							<point eId="sec2-list1-pnt4-list1-pntb">
+								<num>(B) </num>
+								<content>
+									<p>transports not more than 25 individuals,
+										in addition to the crew;</p>
+								</content>
+							</point>
+							<point eId="sec2-list1-pnt4-list1-pntc">
+								<num>(C) </num>
+								<content>
+									<p>is not a ferry (as defined under section
+										2101(10b) of title 46, United States
+										Code);</p>
+								</content>
+							</point>
+							<point eId="sec2-list1-pnt4-list1-pntd">
+								<num>(D) </num>
+								<content>
+									<p>does not transport individuals in
+										point-to-point service for hire; and</p>
+								</content>
+							</point>
+							<point eId="sec2-list1-pnt4-list1-pnte">
+								<num>(E) </num>
+								<content>
+									<p>does not transport merchandise between
+										ports in the United States.</p>
+								</content>
+							</point>
+						</list>
+					</point>
+				</list>
+			</section>
+			<section eId="page" status="editorial">
+				<content>
+					<p>Page 125 STAT. 754<omissis/>
+					</p>
+				</content>
+			</section>
+			<section eId="sec3">
+				<num> SEC. 3 .</num>
+				<heading>AUTHORIZATION OF ELIGIBLE VESSELS.</heading>
+				<content>
+					<p>Notwithstanding <mref eId="mref1">
+							<ref eId="mref1-ref1"
+								href="/us/usc/eng/main#title46-55102">sections
+								55102</ref>, <ref eId="mref1-ref2"
+								href="/us/usc/eng/main#title46-55103"
+								>55103</ref>, and <ref eId="mref1-ref3"
+								href="/us/usc/eng/main#title46-55111"
+								>55111</ref> of title 46, United States
+							Code</mref>, an eligible vessel, operating only in
+						preparation for, or in connection with, the 34th
+						America's Cup competition, may position competing
+						vessels and may transport individuals and equipment and
+						supplies utilized for the staging, operations, or
+						broadcast of the competition from and around the ports
+						in the United States.</p>
+				</content>
+			</section>
+			<section eId="sec4">
+				<num> SEC. 4 .</num>
+				<heading>CERTIFICATION.</heading>
+				<list eId="sec4-lst1">
+					<point eId="sec4-lst1-ptna">
+						<num>(a) </num>
+						<content>
+							<p>Requirement.--A vessel may not operate under
+								section 3 unless the vessel has received an
+								Eligibility Certification. </p>
+						</content>
+					</point>
+					<point eId="sec4-lst1-ptnb">
+						<num> (b) </num>
+						<content>
+							<p> Issuance.--The Administrator of the Maritime
+								Administration of the Department of
+								Transportation is authorized to issue an
+								Eligibility Certification with respect to any
+								vessel that the Administrator determines, in his
+								or her sole discretion, meets the requirements
+								set forth in section 2(4).</p>
+						</content>
+					</point>
+				</list>
+			</section>
+			<section eId="sec5">
+				<num> SEC. 5 .</num>
+				<heading>ENFORCEMENT.</heading>
+				<content>
+					<p>Notwithstanding <mref eId="mref2">
+							<ref eId="mref2-ref1"
+								href="/us/usc/eng/main#title46-55102">sections
+								55102</ref>, <ref eId="mref2-ref2"
+								href="/us/usc/eng/main#title46-55103"
+								>55103</ref>, and <ref eId="mref2-ref3"
+								href="/us/usc/eng/main#title46-55111"
+								>55111</ref> of title 46, United States
+							Code</mref>, an Eligibility Certification shall be
+						conclusive evidence to the Secretary of the Department
+						of Homeland Security of the qualification of the vessel
+						for which it has been issued to participate in the 34th
+						America's Cup as a competing vessel or a supporting
+						vessel.</p>
+				</content>
+			</section>
+			<section eId="sec6">
+				<num> SEC. 6 .</num>
+				<heading>PENALTY.</heading>
+				<content>
+					<p>Any vessel participating in the 34th America's Cup as a
+						competing vessel or supporting vessel that has not
+						received an Eligibility Certification or is not in
+						compliance with <ref eId="ref2"
+							href="/us/usc/eng/main#title46-12112 ">section 12112
+							of title 46, United States Code</ref>, shall be
+						subject to the applicable penalties provided in <mref
+							eId="mref3">
+							<ref eId="mref3-ref1"
+								href="/us/usc/eng/main#title46-chp121">chapters
+								121</ref>, and <ref eId="mref3-ref2"
+								href="/us/usc/eng/main#title46-chap551">551 of
+								title 46, United States Code</ref>
+						</mref>.</p>
+				</content>
+			</section>
+			<!-- omissis -->
+		</body>
+		<conclusions>
+			<formula class="finalFormula" name="theFormula">
+				<p>Approved <date date="2011-11-29">November 29,
+					2011</date>.</p>
+			</formula>
+			<p>
+				<authorialNote eId="note3">
+					<p> LEGISLATIVE HISTORY--<ref eId="ref3"
+							href="/us/bill/2011-11-29/hr3321/">H.R. 3321 (S.
+							1759) [</ref>:</p>
+					<p>---------------------------------------------------------------------------</p>
+					<p>CONGRESSIONAL RECORD, Vol. 157 (2011):</p>
+					<p> Nov. 4, considered and passed House.</p>
+					<p> Nov. 17, considered and passed Senate, amended.</p>
+					<p> Nov. 18, House concurred in Senate amendment.</p>
+				</authorialNote>
+			</p>
+		</conclusions>
+	</act>
+</akomaNtoso>

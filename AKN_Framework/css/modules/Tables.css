@@ -1,0 +1,26 @@
+/* ***********************************************
+ *     CSS Module for AKN Tables
+ * *********************************************** */
+
+table {
+    display: table;
+    margin: 0.75em;
+    width: 100%;
+}
+
+tr {
+    display: table-row;
+}
+
+td {
+    display: table-cell;
+    border: 1pt black solid;
+    border-collapse: collapse;
+}
+
+table caption {
+    display: table-caption;
+    font-weight: bold;
+    font-size: 14pt;
+    margin: 0.75em;
+}

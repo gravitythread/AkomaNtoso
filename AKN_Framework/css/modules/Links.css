@@ -1,0 +1,28 @@
+/* ***********************************************
+ *     CSS Module for AKN Link Elements
+ * *********************************************** */
+
+componentRef, documentRef {
+    display: block;
+    margin: 0.5em;
+}
+
+documentRef[showAs], ref[showAs]{
+    content: attr(showAs);
+}
+
+mref {
+    color: grey;
+}
+
+@media oxygen {
+    documentRef:before, ref:before {
+        content: oxy_url("../icons/link.png") " ";
+        vertical-align: bottom;
+    }
+    
+    ref, documentRef {
+        color: blue;
+        text-decoration: underline;
+    }
+}

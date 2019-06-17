@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+	<doc contains="originalVersion" name="Appendix">
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="/za/report/2003-03-22/main/schedule1"/>
+					<FRBRuri value="/za/report/2003-03-22"/>
+					<FRBRdate date="2003-03-22" name="Generation"/>
+					<FRBRauthor href="#parliament" as="#author"/>
+					<componentInfo>
+						<componentData eId="wmain" href="#wmain" name="wmain" showAs="Main document"/>
+						<componentData eId="wschedule1" href="#wschedule1" name="schedule1" showAs="Schedule 1"/>
+					</componentInfo>
+					<FRBRcountry value="za"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="/za/report/2003-03-22/eng@/main/schedule1"/>
+					<FRBRuri value="/za/report/2003-03-22/eng@"/>
+					<FRBRdate date="2009-02-21" name="Generation"/>
+					<FRBRauthor href="#somebody" as="#editor"/>
+					<componentInfo>
+						<componentData eId="emain" href="#emain" name="emain" showAs="Main document"/>
+						<componentData eId="eappendix1" href="#eschedule1" name="schedule1" showAs="Schedule 1"/>
+					</componentInfo>
+					<FRBRlanguage language="eng"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="/za/report/2003-03-22/eng@/main/schedule1.xml"/>
+					<FRBRuri value="/za/report/2003-03-22/eng@.akn"/>
+					<FRBRdate date="2009-02-21" name="XMLMarkup"/>
+					<FRBRauthor href="#somebody" as="#editor"/>
+					<componentInfo>
+						<componentData eId="mmain" href="#/za/report/2003-03-22/eng@/main.xml" name="emain" showAs="Main document"/>
+						<componentData eId="mschedule1" href="schedule1.xml" name="schedule1" showAs="Schedule 1"/>
+					</componentInfo>
+				</FRBRManifestation>
+			</identification>
+			<publication name="publication" date="2003-03-22" showAs="publication" number="444"/>
+			<lifecycle source="#somebody">
+				<eventRef eId="e1" date="2003-03-22" source="#ro1" type="generation"/>
+			</lifecycle>
+			<references source="#somebody">
+				<original eId="ro1" href="/za/report/2003-03-22/eng@/schedule1" showAs="Original"/>
+				<attachmentOf eId="schedule1" href="/za/report/2003-03-22/eng@/main" showAs="Main Document"/>
+				<!-- this table is a schedule of the main document @href -->
+				<TLCOrganization eId="parliament" href="/ontology/organization/za/za.parliament" showAs="Parliament of South Africa"/>
+				<TLCPerson eId="somebody" href="/ontology/person/it/monica.somebody" showAs="somebody"/>
+				<TLCRole eId="author" href="/ontology/role/author" showAs="Author"/>
+				<TLCRole eId="editor" href="/ontology/role/editor" showAs="Editor"/>
+			</references>
+		</meta>
+		<preface>
+			<p class="heading">
+				<docTitle>Schedule To Part XVI</docTitle>
+			</p>
+		</preface>
+		<mainBody>
+			<container eId="hco1" class="table" name="table">
+				<p>I certify that the above depositions of C.D. and E.F. were taken and sworn before me in the presence of the accused person A.B. and that A.B. or his advocate had full opportunity of cross-examining the several witnesses,</p>
+				<table eId="tab1">
+					<tr>
+						<td>
+							<p>At</p>
+						</td>
+						<td>
+							<p>
+								<fillIn>............................</fillIn>
+							</p>
+						</td>
+						<td>
+							<p>on this</p>
+						</td>
+						<td>
+							<p>
+								<fillIn>............................</fillIn>
+							</p>
+						</td>
+						<td>
+							<p>day of</p>
+						</td>
+						<td>
+							<p>
+								<fillIn>............................</fillIn>
+							</p>
+						</td>
+						<td>
+							<p>19</p>
+						</td>
+						<td>
+							<p>
+								<fillIn>............................</fillIn>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td >
+							<p>G.H.,
+Magistrate.</p>
+						</td>
+					</tr>
+				</table>
+			</container>
+		</mainBody>
+	</doc>
+</akomaNtoso>

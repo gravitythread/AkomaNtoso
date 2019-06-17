@@ -1,0 +1,89 @@
+/* ***********************************************
+ *     CSS Module for AKN Judgment Documents
+ * *********************************************** */
+
+@media oxygen {
+   judgment > header, judgmentBody {
+    -oxy-foldable: true;
+    -oxy-folded: true;
+    -oxy-not-foldable-child: heading, num;
+    } 
+    
+    /* Section Boxes */
+    judgmentBody, judgment > header, judgmentBody > introduction,
+    judgmentBody > background, judgmentBody > motivation, judgmentBody > arguments,
+     judgmentBody > remedies, judgmentBody > decision {
+        margin: 0.75em;
+        padding: 0.75em;
+        border: 0.75pt solid black;
+    }
+}
+
+
+judgmentBody > introduction, judgmentBody > arguments,
+judgmentBody > background, judgmentBody > motivation, 
+judgmentBody > decision {
+    display: block;
+}
+
+@media oxygen {
+    /* Secction Labels */
+    judgmentBody:before {
+        content: "Judgment Body: ";
+        font-weight: bold;
+    }
+    
+    judgment > header:before {
+        content: "Judgment Header: ";
+        font-weight: bold;
+        font-size: 12pt;
+    }
+    
+    judgmentBody > introduction:before {
+        content: "Introduction: ";
+        font-weight: bold;
+    }
+    
+    judgmentBody > background:before {
+        content: "Background: ";
+        font-weight: bold;
+    }
+    
+    judgmentBody > motivation:before {
+        content: "Motivation: ";
+        font-weight: bold;
+    }
+    
+    judgmentBody > arguments:before {
+        content: "Arguments: ";
+        font-weight: bold;
+    }
+    
+    judgmentBody > remedies:before {
+        content: "Remedies: ";
+        font-weight: bold;
+    }
+    
+    judgmentBody > decision:before {
+        content: "Decision: ";
+        font-weight: bold;
+    }    
+}
+
+judgmentBody p {
+    display: block;
+}
+
+
+judgment > header > * {
+    text-align: center;
+}
+
+judgment > header > p {
+    display: block;
+}
+
+judgment > header {
+    font-size: 16pt;
+    page-break-after: always;
+}

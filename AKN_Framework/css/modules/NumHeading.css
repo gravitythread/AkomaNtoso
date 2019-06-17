@@ -1,0 +1,94 @@
+/* ***********************************************
+ *     CSS Module for AKN num and heading elements
+ * *********************************************** */
+
+/* Standard heading */
+heading {
+    display: inline;
+    margin: 1.0em 1.0em 1.0em 0em;
+    font-weight: bold;
+}
+
+article > num,
+title > num,
+tome > num,
+chapter > num,
+hcontainer > num,
+section > num,
+part > num {
+    font-size: 18pt;
+}
+
+tblock > num, subsection > num, subchapter > num {
+    font-size: 16pt;
+}
+
+
+num {
+    display: inline;
+    font-weight: bold;
+}
+
+list > point > num {
+    display: inline;
+}
+
+article > heading,
+title > heading,
+tome > heading,
+chapter > heading,
+hcontainer > heading,
+section > heading,
+part > heading {
+    font-size: 18pt;
+}
+
+tblock > heading, subsection > heading, subchapter > heading {
+    font-size: 16pt;
+}
+
+blockList > item >  heading, blockList > item >  subheading {
+    font-size: 14pt;
+}
+
+/* ******************************************************
+ *         Special Inlines for p tags (sometimes) 
+ * ******************************************************/ 
+
+/* When there are multiple p tags, make blocks. */
+blockList > item > p, 
+blockList > item > content > p, 
+paragraph > p,
+paragraph > content > p,
+subparagraph > p,
+subparagraph > content > p,
+section > p,
+section > content > p,
+subsection > p,
+subsection > content > p,
+tblock > p,
+tblock > content > p,
+point > p,
+point > content > p,
+recital > p {
+    display: block;
+}
+
+/* But the first p tag is inlined with num and heading.  */
+blockList > item > p:first-of-type,
+blockList > item > content > p:first-of-type,
+paragraph > p:first-of-type,
+paragraph > content > p:first-of-type,
+subparagraph > p:first-of-type,
+subparagraph > content > p:first-of-type,
+section > p:first-of-type,
+section > content > p:first-of-type,
+subsection > p:first-of-type,
+subsection > content > p:first-of-type,
+tblock > p:first-of-type,
+tblock > content > p:first-of-type,
+point > p:first-of-type,
+point > content > p:first-of-type,
+recital > p:first-of-type {
+    display: inline;
+}

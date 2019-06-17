@@ -1,0 +1,71 @@
+/* *************************************************** */
+
+@media oxygen {
+    amendmentHeading, amendmentBody, amendmentJustification, 
+    amendmentReference, amendmentContent {
+        -oxy-foldable: true;
+        -oxy-folded: true;
+        -oxy-not-foldable-child: heading, num;
+    }   
+    
+    amendmentBody, amendmentHeading, amendmentContent, 
+    amendmentReference, amendmentJustification {
+        border: grey 0.5pt solid; 
+    }
+    
+    /* *************** Section labels **************** */
+    amendmentBody:before {
+        content: "Body: ";
+        font-weight: bold;
+    }
+    
+    amendmentHeading:before {
+        content: "Heading: ";
+            font-weight: bold;
+    }
+    
+    amendmentContent:before {
+        content: "Content: ";
+            font-weight: bold;
+    }
+    
+    amendmentJustification:before {
+        content: "Justification: ";
+            font-weight: bold;
+    }
+    
+    amendmentReference:before {
+        content: "References: ";
+        font-weight: bold;
+    }
+}
+
+amendmentBody, amendmentHeading, amendmentContent, 
+amendmentReference, amendmentJustification {
+    margin: 0.75em;
+    padding: 0.75em; 
+}
+
+/* Display modes */
+amendmentHeading, amendmentContent, 
+amendmentJustification, amendmentReference, amendment > conclusions {
+    display: block;
+}
+
+amendmentJustification > p, amendmentReference > p, 
+amendment > conclusions > p {
+    display: block;
+}
+
+amendmentHeading, amendmentJustification, amendmentReference {
+    display: block;
+}
+
+amendmentJustification > p, amendmentReference > p, 
+amendmentHeading > p, amendmentContent > p {
+    display: block;
+}
+
+amendmentJustification > *, amendmentReference > * {
+    margin-left: 1.0em;
+}

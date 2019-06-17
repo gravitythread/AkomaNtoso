@@ -1,0 +1,33 @@
+/**********************************************************
+ *       Akoma Ntoso - Document Conclusions
+ * *******************************************************/
+ 
+conclusions {
+    margin-left: 0.75em;
+}
+
+conclusions > p {
+    margin: 0.75em;
+    display: block;
+}
+
+@media oxygen-chemistry {
+    
+    /* Give a conslusion section a hefty top offset and border line. */
+    conclusions {
+        border-top: 1pt black solid;
+        margin-top: 12pt;
+        padding-top: 12pt;
+    }
+}
+
+/* *********************************************************
+ *        Doc Id Content when in a Conclusion
+ * ******************************************************** */
+ 
+conclusions docTitle, conclusions docProponent, conclusions docType, 
+conclusions affectedDocument, conclusions docNumber, conclusions docDate, 
+conclusions longTitle, conclusions shortTitle {
+    display: inline;
+    font-size: 12pt;
+}

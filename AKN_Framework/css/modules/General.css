@@ -1,0 +1,292 @@
+/* ********************************************************
+ *     CSS Module for AKN Documents - General Styling
+ * ******************************************************* */
+
+mainBody, body, 
+portionBody, conclusions,  
+attachments, components, 
+component, doc {
+        margin: 0.75em;
+        padding: 0.75em;
+}
+ 
+article, part, chapter, section, title {
+    margin: 1.25em 0.5em 0.5em 0.5em;
+}
+
+/* Rules applies only to edit mode */
+@media oxygen{
+    
+    /* Structures that are folded by default */
+    article, components, mainBody, portionBody,
+    body, attachments, conclusions {
+        -oxy-foldable: true;
+        -oxy-folded: true;
+        -oxy-not-foldable-child: heading, num;
+    }
+    
+    /* Structures that are open by default.  */
+    part, chapter, section, component, book {
+    -oxy-foldable: true;
+    -oxy-not-foldable-child: num, heading;
+    }
+    
+    /* Bounding boxes for major sections. */
+    mainBody, body, 
+    portionBody, conclusions,  
+    attachments, components,  
+    component, doc {
+        border: 0.75pt solid black;
+    }
+    
+    /* Labels for major sections.  */
+    components:before {
+        content: "Components: ";
+        font-weight: bold;
+    }
+    
+    attachments:before {
+        content: "Attachments: ";
+        font-weight: bold;
+    }
+    
+    body:before {
+        content: "Body: ";
+        font-weight: bold;
+    }
+    
+    mainBody:before {
+        content: "Main Body: ";
+        font-weight: bold;
+    }
+    
+    component:before {
+        content: "Component: ";
+        font-weight: bold;
+    }
+    
+    portionBody:before {
+        content: "Portion Body: ";
+        font-weight: bold;
+    }
+    
+    collectionBody:before {
+        content: "Collection Body: ";
+        font-weight: bold;
+    }
+    
+    conclusions:before {
+        font-weight: bold;
+        content: "Conclusions: "
+    }
+}
+
+/* Doc sections that will page break */
+title, tome, chapter, component {
+    page-break-before: always;
+}
+
+/* ******************************************************
+ *    Quoted Structures
+ * ****************************************************** */
+ 
+ /* When given, use start quote in front. */
+ quotedStructure[startQuote]:before {
+     content: attr(startQuote);
+ }
+
+/* When given, use end quote at the end. */
+ quotedStructure[endQuote]:after{
+     content: attr(endQuote);
+ }
+ 
+quotedStructure > section {
+     display: inline;
+}
+
+quotedStructure > section > num, 
+quotedStructure > section > heading {
+     font-size: 90%;
+     width : auto;
+}
+
+paragraph, subsection {
+    margin-left: 1.5em;
+}
+
+step, analysis {
+    display: block;
+}
+
+p {
+    margin: 0.5em;
+    display: block;
+}
+
+container > p, mainBody > p, rollCall > p  {
+    margin: 0.5em;
+    display: block;
+}
+
+recital, hcontainer, citation {
+    margin: 0.5em 0.0em 0.5em 1.0em;
+    display: block;
+}
+
+tblock {
+    margin: 1.0em;
+    display: block;
+}
+
+recital {
+    margin-left: 1.0em;
+    display: block;
+}
+
+signature {
+    display: block;
+    margin-left: 1.0em;
+}
+
+@media oxygen-chemistry {
+    signature {
+        margin: 6pt;
+    }
+}
+
+division {
+    margin: 1.5em;
+}
+
+component, components {
+    display: block;
+    margin: 0.5em;
+}
+
+section, subsection, hcontainer, paragraph, subparagraph {
+    display: block;
+    margin: 0.75em 0.75em 0.75em 1.5em;
+}
+
+content, 
+paragraph > content, 
+subparagraph > content {
+    /*margin: 0.75em;*/
+    display: contents;
+}
+
+/*             Authorial Note                 */
+/* Authorial notes seem to just be footnotes  */
+@media oxygen {
+    authorialNote {
+        margin-left: 1.0em;
+        font-style: italic;
+    }
+}
+
+/* In print, authorial notes are given footnote display. */
+@media oxygen-chemistry {
+    
+    authorialNote {
+        float: footnote;
+        margin: 6pt;
+        font-size: 11pt;
+    }    
+}
+
+authorialNote p {
+    display: inline;
+    font-style: italic;
+}
+
+@media oxygen {
+    signature:before {
+        content: "Signed: ";
+        font-weight: bold;
+    }   
+}
+
+omissis:empty {
+    content: "[.....]";
+    font-weight: bold;
+}
+
+attachment {
+    display: block;
+}
+
+lawyer {
+    display: block;
+}
+
+@media oxygen-chemistry {
+    lawyer {
+        display: inline;
+    }    
+}
+
+/* ******************************************************
+ *    Icons for in doc entity references
+ * ****************************************************** */
+ 
+ @media oxygen {
+    docProponent:before, lawyer:before , person:before {
+        content: oxy_url("../icons/person.png") " ";
+        vertical-align: bottom;
+    }
+    
+    role:before {
+        content: oxy_url("../icons/role.png") " ";
+        vertical-align: bottom;
+    } 
+ }
+
+/* ******************************************
+ *            Fill In - Form Fields
+ * ***************************************** */
+fillIn {
+    background-color: #BBBBBB;
+}
+
+fillIn:before {
+    content: "["
+}
+
+fillIn:after {
+    content: "]"
+}
+
+/* **********************************************************
+ *        Inline Styling
+ * ******************************************************** */
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 50%;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 50%;
+}
+
+u {
+    text-decoration: underline;
+}
+
+eol {
+  display: inline;
+  content: "\A";
+}
+
+inline {
+  display: inline;
+}

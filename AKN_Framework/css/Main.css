@@ -1,0 +1,17 @@
+/* *********************************************************** 
+ * An on-screen stylesheet for Akoma Ntoso 3.0. files.
+ * **********************************************************/
+
+@import "modules/frontMatter.css";
+@import "modules/General.css";
+@import "modules/Conclusions.css";             
+@import "modules/Changes.css";
+@import "modules/Meta.css";
+@import "modules/Tables.css";
+@import "modules/Lists.css";
+@import "modules/Links.css";
+@import "modules/Ammendments.css";
+@import "modules/Debate.css";
+@import "modules/Judgment.css";
+@import "modules/PageLayouts.css";
+@import "modules/NumHeading.css";

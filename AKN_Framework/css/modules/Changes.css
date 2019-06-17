@@ -1,0 +1,27 @@
+/* **********************************
+ * 
+ * ********************************* */
+textualMod, source, destination, old, new {
+    display: block;
+}
+
+activeModifications {
+    margin: 0em 0em 0em 1.0em;
+}
+
+textualMod {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 0.75pt black solid;
+}
+
+del {
+    display: inline;
+    color: red;
+    text-decoration: line-through;
+}
+
+ins {
+    display: inline;
+    color: green;
+}

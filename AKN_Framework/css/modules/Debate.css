@@ -1,0 +1,93 @@
+/* ************************************************
+ *          Akoma Ntoso - Debate Elements
+ * ********************************************** */
+
+/* Bounding boces, labels, and collapsible section are editor only. */
+@media oxygen {
+
+    administrationOfOath, rollCall, prayers, oralStatements, 
+    writtenStatements, personalStatements, ministerialStatements, 
+    papers, questions, pointOfOrder, petitions, resolutions,
+    declarationOfVote, communication, petitions, papers, noticesOfMotion,
+    questions, address, proceduralMotions, pointOfOrder, 
+    adjournment, debateBody, debateSection, ministerialStatements, 
+    communication {
+        -oxy-foldable: true;
+        -oxy-folded: true;
+        -oxy-not-foldable-child: heading, num;
+    }
+    
+    debateBody {
+        margin: 0.75em;
+        padding: 0.75em;
+        border: 0.75pt solid black;
+    }
+    
+    debateBody:before {
+        content: "Debate Body: ";
+        font-weight: bold;
+    }    
+}
+
+/* Margins and block display for all major debate sections.  */
+administrationOfOath, rollCall, prayers, 
+oralStatements, writtenStatements, personalStatements, 
+ministerialStatements, resolutions, nationalInterest, 
+declarationOfVote, communication, petitions, papers, 
+noticesOfMotion, questions, address, proceduralMotions, 
+pointOfOrder, adjournment, debateSection {
+    margin: 0.75em;
+}
+
+administrationOfOath, rollCall, prayers, 
+oralStatements, writtenStatements, personalStatements, 
+ministerialStatements, resolutions, nationalInterest, 
+declarationOfVote, communication, petitions, papers, 
+noticesOfMotion, questions, address, proceduralMotions, 
+pointOfOrder, adjournment, debateSection, speech {
+    display: block;
+}
+
+debateBody heading {
+    display: block;
+    font-size: 16pt;
+}
+
+speech {
+    margin: 0.5em 0.5em 0.5em 1.0em;
+}
+
+debateSection > question, debateSection > answer, debateSection > scene, 
+debateSection > summary, debateSection > p {
+    display: block;
+    margin: 1.0em;
+}
+
+outcome > vote {
+    display: block;
+}
+
+from {
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+scene, summary {
+    display: block;
+    font-style: italic;
+}
+
+/* *****************************************************************
+ *         Special p tags rules
+ * * *********************************************************** */
+ 
+/* When there are multiple p tags, make blocks. */
+speech > p, question > p, answer > p, adjournment > p, conclusions > p {
+    display: block;
+}
+
+/* But the first is inlined to num and heading.  */
+speech > p:first-of-type, question > p:first-of-type, answer > p:first-of-type,
+adjournment > p:first-of-type, conclusions > p:first-of-type  {
+    display: inline;
+}

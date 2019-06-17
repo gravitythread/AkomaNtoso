@@ -1,0 +1,38 @@
+/* ***********************************************
+ *     CSS Module for AKN Page Layouts
+ * *********************************************** */
+ 
+@page default-page {
+    margin-top: 0.75in;
+    margin-bottom: 0.75in;
+    margin-left: 0.75in;
+    margin-right: 0.75in;
+    size: portrait;
+    
+    @footnote {
+		content: leader(solid);
+		padding: 6pt;
+	}
+    
+     @top-left {  
+       content: "***";
+    }
+    
+    @top-center  {
+        content: "***";
+    }
+    
+    @top-right  {
+        content: "***";
+    }
+    
+/*    @bottom-left { }
+    
+    @bottom-right { } */
+    
+    @bottom-center { 
+        content: counter(page);
+        font-family: "Times New Roman", serif;
+    }
+    
+}

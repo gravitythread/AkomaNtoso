@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+	<act contains="originalVersion" name="publicLaw">
+		<meta>
+			<identification source="#palmirani">
+				<FRBRWork>
+					<FRBRthis value=""/>
+					<FRBRuri value=" "/>
+					<FRBRdate date="2011-11-29" name="Generation"/>
+					<FRBRauthor href="#congress" as="#author"/>
+					<FRBRcountry value="us"/>
+					<FRBRnumber value="112-61"/>
+					<FRBRname value="publicLaw"/>
+					<FRBRprescriptive value="true"/>
+					<FRBRauthoritative value="true"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="/akn/us/act/2011-11-29/112-61/eng@/!main"/>
+					<FRBRuri value="/akn/us/act/2011-11-29/112-61/eng@"/>
+					<FRBRdate date="2012-05-09" name="Generation"/>
+					<FRBRauthor href="#palmirani" as="#editor"/>
+					<FRBRlanguage language="eng"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis
+						value="/akn/us/act/2011-11-29/112-61/eng@/!main.xml"/>
+					<FRBRuri value="/akn/us/act/2011-11-29/112-61/eng@.akn"/>
+					<FRBRdate date="2012-05-09" name="Generation"/>
+					<FRBRauthor href="#palmirani" as="#editor"/>
+					<FRBRformat value="xml"/>
+				</FRBRManifestation>
+			</identification>
+			<publication name="gpo" date="2011-11-29" showAs="GPO"
+				number="125 STAT."/>
+			<classification source="#palmirani">
+				<keyword value="maritimeLaw" showAs="Maritime Law"
+					dictionary="US"/>
+			</classification>
+			<lifecycle source="#palmirani">
+				<eventRef eId="eref_1" date="2011-11-29" source="#ro1"
+					type="generation" refersTo="#enterInForce"/>
+			</lifecycle>
+
+		</meta>
+		<preface>
+			<p>
+				<docTitle/></p>
+
+		</preface>
+
+		<body>
+			<section eId="sec_1"/>
+			<section eId="sec_2"/>
+
+		</body>
+
+	</act>
+</akomaNtoso>

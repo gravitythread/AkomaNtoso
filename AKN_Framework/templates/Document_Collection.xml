@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0"  >
+    <documentCollection name="">
+        <meta>
+            <identification source="">
+                <FRBRWork>
+                    <FRBRthis value=""/>
+                    <FRBRuri value=""/>
+                    <FRBRdate date="2000-01-01" name="creation"/>
+                    <FRBRauthor href=""/>
+                    <FRBRcountry value=""/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value=""/>
+                    <FRBRuri value=""/>
+                    <FRBRdate date="2000-01-01" name="creation"/>
+                    <FRBRauthor href=""/>
+                    <FRBRlanguage language=""/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value=""/>
+                    <FRBRuri value=""/>
+                    <FRBRdate date="2000-01-01" name="creation"/>
+                    <FRBRauthor href=""/>
+                </FRBRManifestation>
+            </identification>
+        </meta>
+        <collectionBody>
+            <component >
+                <documentRef href="" showAs=""/>
+            </component>
+        </collectionBody>
+    </documentCollection>
+</akomaNtoso>

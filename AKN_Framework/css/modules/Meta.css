@@ -1,0 +1,405 @@
+/* *************************************************************
+ *                Metadata Section of Akoma Ntoso
+ * 
+ * Including FRBR elements, TLC elements, and others.
+ * ************************************************************ */
+
+@media print {
+    meta {
+        display:none;
+    }
+}
+
+/* Metadata sub blocks  */
+
+@media oxygen {
+
+    meta, collectionBody {
+        margin: 0.75em;
+        padding: 0.75em;
+        border: grey solid 0.75pt;
+    }
+
+    meta, identification, references, workflow, analysis, notes {
+        -oxy-foldable: true;
+        -oxy-folded: true;
+    }
+    
+    publication {
+        -oxy-foldable: false;
+        -oxy-folded: false;    
+    }
+
+    publication, classification, lifecycle, workflow, identification, 
+    references, analysis, parliamentary, voting, recount, notes {
+    display: block;
+    margin: 0.75em;
+    padding: 0.75em;
+    border: grey 0.5pt solid;
+    background-color: #FFFFA5;
+    }
+    
+    meta:before {
+    content: "Metadata: ";
+    font-weight: bold;
+    }
+    
+    componentData, eventRef { 
+        display: block;
+        margin: 0em 0em 0em 1.0em;
+    }
+    
+    quorum, count, keyword {
+        display: block;
+        margin-left: 0.75em;
+    }
+    
+    /* Section Labels */
+    identification:before {
+        content: "FRBR Identification: ";
+        font-weight: bold;
+    }
+    
+    references:before {
+        content: "References: ";
+        font-weight: bold;
+    }
+    
+    analysis:before {
+        content: "Analysis: ";
+        font-weight: bold;
+    }
+    
+    workflow:before {
+        content: "Workflow: ";
+        font-weight: bold;
+    }
+    
+    lifecycle:before {
+        content: "Lifecycle: ";
+        font-weight: bold;
+    }
+    
+    classification:before {
+        content: "Classification: ";
+        font-weight: bold;
+    }
+    
+    notes:before {
+        content: "Notes: ";
+        font-weight: bold;
+    }
+    
+    voting:before {
+        content: "Voting: ";
+        font-weight: bold;
+    }
+    
+    recount:before {
+        content: "Recount: ";
+        font-weight: bold;
+    }
+}
+
+
+
+note {
+    display: block;
+    margin: 0.5em;
+}
+
+/* ************************************************************
+ *                FRBR Elements
+ * 
+ * Establishment of work, expression, manifestion
+ * of the document. Creation of multiple identifiers.
+ * *********************************************************** */
+FRBRthis, FRBRuri, FRBRdate, FRBRauthor, FRBRcountry, FRBRformat, FRBRlanguage {
+    display: block;
+    margin: 0em 0em 0em 1.0em;
+    color:gray;
+    font-size: 11pt;
+}
+
+FRBRWork, FRBRExpression, FRBRManifestation {
+    display: block;
+    margin: 0.5em 0.5em 0.5em 1.0em;
+    -oxy-foldable: true;
+    -oxy-folded: true;
+}
+
+FRBRWork:before{
+    content: "FRBRWork: ";
+    font-weight: bold;
+}
+
+FRBRExpression:before{
+    content: "FRBRExpression: ";
+    font-weight: bold;
+}
+
+FRBRManifestation:before{
+    content: "FRBRManifestation: ";
+    font-weight: bold;
+}
+
+FRBRnumber, FRBRname, FRBRprescriptive, FRBRauthoritative {
+    display: block;
+    margin: 0em 0em 0em 1.0em;
+}
+
+/* Show attributes and allow editing of FRBR values. */
+FRBRthis:before {
+    content: 
+        "FRBRthis: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) ;
+}
+
+FRBRuri:before {
+    content: 
+        "FRBRuri: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) ;    
+}
+
+FRBRauthor:before {
+    content: 
+        "FRBRauthor: "
+        oxy_label(text, "Href: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@href", fontInherit, true) ;    
+}
+
+FRBRformat:before {
+    content: 
+        "FRBRformat: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) ;  
+}
+
+FRBRlanguage:before {
+    content: 
+        "FRBRlanguage: "
+        oxy_label(text, "Language: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@language", fontInherit, true) ;  
+}
+
+FRBRcountry:before {
+    content: 
+        "FRBRcountry: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) ;  
+}
+
+FRBRnumber:before {
+    content: 
+        "FRBRnumber: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) ;  
+}
+
+FRBRname:before {
+    content: 
+        "FRBRname: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) ;  
+}
+
+FRBRauthoritative:before {
+    content: 
+        "FRBRauthoritative: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) ;  
+}
+
+FRBRprescriptive:before {
+    content: 
+        "FRBRprescriptive: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) ;  
+}
+
+FRBRdate:before {
+    content: 
+        "FRBRdate: "
+        oxy_label(text, "Date: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@date", fontInherit, true) 
+        
+        oxy_label(text, "Name: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@name", fontInherit, true);    
+}
+
+/* ******************************************************** */
+keyword:before { 
+    content: "Keyword: "
+        oxy_label(text, "Value: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@value", fontInherit, true) 
+        
+        oxy_label(text, "Show As: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@showAs", fontInherit, true)
+        
+        oxy_label(text, "Dictionary: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@dictionary", fontInherit, true);
+}					
+
+/* ***********************************************************
+ *                     Publication
+ *  ********************************************************** */
+ 
+ publication:before { 
+    content: "Publication: "
+        oxy_label(text, "Date: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@date", fontInherit, true) 
+        
+        oxy_label(text, "Name: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@name", fontInherit, true)
+        
+        oxy_label(text, "Show As: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@showAs", fontInherit, true);
+}
+
+/* ************************************************************
+ *         Children of references - TLC elements, etc...
+ * **************************************************** */
+
+/* All of these go into block mode. */
+original, TLCProcess, TLCRole, TLCOrganization, 
+TLCPerson, TLCReference, TLCConcept, TLCEvent, 
+passiveRef, TLCTerm, TLCLocation, attachmentOf 
+activeRef, hasAttachment {
+    display: block;
+}
+
+TLCConcept, TLCOrganization, TLCRole, TLCPerson,
+TLCTerm, TLCLocation, original, attachmentOf, hasAttachment {
+    margin: 0.75em;
+    font-size: 11pt;
+    color: gray;
+}
+
+/* Show icons in front of these elements. */
+TLCPerson:before {
+    content: oxy_url("../icons/person.png") " ";
+    vertical-align: bottom;
+}
+
+TLCPerson:after {
+     content: 
+        oxy_label(text, "eId: ") 
+        oxy_editor(type, text, edit, "@eId", fontInherit, true) 
+        
+        oxy_label(text, "Show As: ") 
+        oxy_editor(type, text, edit, "@showAs", fontInherit, true)
+        
+        oxy_label(text, "Href: ") 
+        oxy_editor(type, text, edit, "@href", fontInherit, true);   
+}
+
+activeRef:before {
+    content: oxy_url("../icons/active.png") " ";
+    vertical-align: bottom;
+}
+
+activeRef:after {
+     content: 
+        oxy_label(text, "eId: ") 
+        oxy_editor(type, text, edit, "@eId", fontInherit, true) 
+        
+        oxy_label(text, "Show As: ") 
+        oxy_editor(type, text, edit, "@showAs", fontInherit, true)
+        
+        oxy_label(text, "Href: ") 
+        oxy_editor(type, text, edit, "@href", fontInherit, true);   
+}
+
+TLCOrganization:before {
+    content: oxy_url("../icons/organization.png") " ";
+    vertical-align: bottom;
+}
+
+TLCOrganization:after {
+     content: 
+        oxy_label(text, "eId: ") 
+        oxy_editor(type, text, edit, "@eId", fontInherit, true) 
+        
+        oxy_label(text, "Show As: ") 
+        oxy_editor(type, text, edit, "@showAs", fontInherit, true)
+        
+        oxy_label(text, "Href: ") 
+        oxy_editor(type, text, edit, "@href", fontInherit, true);   
+}
+							
+TLCLocation:before {
+    content: "*** ";
+    vertical-align: bottom;
+}
+
+TLCLocation:after {
+     content: 
+        oxy_label(text, "eId: ") 
+        oxy_editor(type, text, edit, "@eId", fontInherit, true) 
+        
+        oxy_label(text, "Show As: ") 
+        oxy_editor(type, text, edit, "@showAs", fontInherit, true)
+        
+        oxy_label(text, "Href: ") 
+        oxy_editor(type, text, edit, "@href", fontInherit, true);   
+}
+
+TLCProcess:before {
+    content: "Process: ";
+    vertical-align: bottom;
+}
+
+TLCRole:before {
+    content: oxy_url("../icons/role.png") " ";
+    vertical-align: bottom;
+}
+
+original:before {
+    content: oxy_url("../icons/original.png") " ";
+    vertical-align: bottom;
+}
+
+TLCRole:after {
+     content: 
+        oxy_label(text, "eId: ") 
+        oxy_editor(type, text, edit, "@eId", fontInherit, true) 
+        
+        oxy_label(text, "Show As: ") 
+        oxy_editor(type, text, edit, "@showAs", fontInherit, true)
+        
+        oxy_label(text, "Href: ") 
+        oxy_editor(type, text, edit, "@href", fontInherit, true);   
+}
+
+TLCConcept:before {
+    content: oxy_url("../icons/concept.png") " ";
+    vertical-align: bottom;
+}
+
+hasAttachment:before {
+    content: "Has Attachment: ";
+    vertical-align: bottom;
+}
+
+hasAttachment:after, TLCProcess:after, attachmentOf:after, original:after, TLCConcept:after {
+     content: 
+        oxy_label(text, " eId: ") 
+        oxy_editor(type, text, edit, "@eId", fontInherit, true) 
+        
+        oxy_label(text, " Show As: ") 
+        oxy_editor(type, text, edit, "@showAs", fontInherit, true)
+        
+        oxy_label(text, " Href: ") 
+        oxy_editor(type, text, edit, "@href", fontInherit, true);   
+}
+
+eventRef:after {
+    content: 
+        oxy_label(text, " Date: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@date", fontInherit, true) 
+        
+        oxy_label(text, " Source: " , width, 5em, text-align, right) 
+        oxy_editor(type, text, edit, "@source", fontInherit, true);
+}
